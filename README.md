@@ -1,2 +1,2 @@
 # myproject
-about celll cell interaction 
+about cell cell interaction 
