@@ -1,5 +1,5 @@
 library(openxlsx)
-library(bipartite)
+library(bipartite)   
 library(igraph)
 library(CellChat)
 pbmc <- readRDS("output/pbmc3k_final.rds")
