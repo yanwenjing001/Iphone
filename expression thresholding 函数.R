@@ -1,7 +1,7 @@
 library(openxlsx)
 library(bipartite)
 library(igraph)
-library(CellChat)
+library(CellChat)  
 pbmc <- readRDS("output/pbmc3k_final.rds")
 mtx <- as.data.frame(pbmc@assays$RNA@data)
 pbmc$celltype <- pbmc@active.ident

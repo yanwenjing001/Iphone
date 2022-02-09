@@ -1,4 +1,4 @@
-library(Seurat)  
+library(Seurat)    
 library(openxlsx)
 library(ComplexHeatmap)
 cc=readRDS("/home/wjyan/integrated.rds")  #cc--Colorectal cancer
