@@ -2,16 +2,16 @@
 
 ## Step 0: Load required packages
 
-'library(Iphone)'
-'library(openxlsx)'
+`library(Iphone)`
+`library(openxlsx)`
 
 ## Step 1: Data input & processing 
 
 Here we load PBMC 3k scRNA-seq seurat object
-'pbmc <- readRDS("output/pbmc3k_final.rds")'
-'mtx <- as.data.frame(pbmc@assays$RNA@data)'
-'pbmc$celltype <- pbmc@active.ident'
-'intercell_interactions <- read.xlsx("C:/Users/YWJ/Desktop/Omnipath/immune_lr2.xlsx")'
+`pbmc <- readRDS("output/pbmc3k_final.rds")
+ mtx <- as.data.frame(pbmc@assays$RNA@data)
+ pbmc$celltype <- pbmc@active.ident
+ intercell_interactions <- read.xlsx("C:/Users/YWJ/Desktop/Omnipath/immune_lr2.xlsx")`
 
 ## Step 2: Using three different methods to calculate interactions between cell types
 
