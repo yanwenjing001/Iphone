@@ -48,7 +48,7 @@ Here we load PBMC 3k scRNA-seq seurat object
 
 ### Visualization      
 `dt_product <- for_heatmap(product.interactions)`        
-`Visual_heatmap(dt_product,net.diff=dt_c,color.heatmap = "Reds")`        
+`Visual_heatmap(net,color.heatmap = "Reds")`        
 
 ### 3.Differential combinations
 `LR <- FindLR(DB=intercell_interactions,mtx)`         
