@@ -32,7 +32,7 @@ Here we load PBMC 3k scRNA-seq seurat object
 #### Chord plot
 `dt_ threshold <- table(intercell_interactions$from,intercell_interactions$to)`            
 `groupSize <-rowSums(dt_threshold)`         
-`netVisual_chord(dt_threshold, vertex.weight = groupSize, weight.scale = T, label.edge= F, title.name = "Number of interactions")`             
+`netVisual_circle(dt_threshold, vertex.weight = groupSize, weight.scale = T, label.edge= F, title.name = "Number of interactions")`             
 `par(mfrow = c(3,3), xpd=TRUE)`    
 `for (i in 1:nrow(dt)) {`       
   `dt2 <- matrix(0, nrow = nrow(dt_threshold), ncol = ncol(dt_threshold), dimnames = dimnames(dt_threshold))`           
